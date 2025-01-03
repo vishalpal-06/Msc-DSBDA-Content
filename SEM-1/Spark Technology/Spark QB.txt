@@ -1,0 +1,90 @@
+UNIT-I
+Introduction to Apache Spark
+What is Apache Spark, and what are its key features?
+Why is Spark often used on top of Hadoop?
+Explain the Spark architecture with the help of a diagram.
+Describe the Spark ecosystem and its main components.
+What are the differences between MapReduce and Spark?
+
+Spark Fundamentals
+Explain the difference between actions and transformations in Spark.
+What is an RDD in Spark, and why is it important?
+Describe three ways to create an RDD in Spark.
+Explain the difference between repartition and coalesce with examples.
+What is a DAG (Directed Acyclic Graph) in Spark, and why is it important?
+
+Key Spark Components
+Write a note on SparkSession and SparkContext. How do they differ?
+What is PySpark, and what are its main features?
+
+PySpark Operations
+Explain the withColumn function in PySpark. Provide an example.
+Describe the filter function in PySpark, using Databricks as an example.
+Explain the orderBy and sort functions in PySpark. How do they differ?
+How do you create a DataFrame from an external data source in Spark?
+
+RDD Operations
+Why is RDD evaluation in Spark called "lazy evaluation"?
+Explain the join operation in PySpark and its different types.
+Describe window functions in PySpark. Provide an example.
+Why is a broadcast join often more efficient than other join types?
+What is the difference between narrow transformations and wide transformations in Spark? Provide examples.
+Explain the map, flatMap, and mapPartitions transformations in RDDs. How do they differ, and when would each be useful?
+
+Advanced Spark Concepts
+Write a note on transformations in RDDs. Why are they essential in Spark's data processing model?
+Describe five actions in RDDs and explain their purpose in Spark applications.
+What is Databricks, and what are its main features?
+Explain the role of a cluster manager in Apache Spark. Provide examples of different cluster managers Spark can use.
+
+Fault Tolerance and Performance
+Explain the concept of RDDs in Apache Spark. How do they enable fault tolerance, and why is this important for distributed data processing?
+Explain the lineage of an RDD and how it contributes to fault tolerance. Provide an example showing how Spark recovers data if an RDD partition is lost.
+What are the advantages and limitations of using RDDs in Spark compared to DataFrames and Datasets? Provide examples of situations where RDDs might be preferable.
+
+Spark Transformations and Actions
+Explain with examples how transformations like map, filter, and flatMap work in RDDs. Describe scenarios where each transformation would be useful.
+Discuss the join operation in RDDs. Provide an example of a join in Spark, and explain the different types of joins available (e.g., inner join, left outer join).
+
+Spark UI
+Describe the purpose of the Spark UI and how it assists in monitoring Spark applications. What are the main components available on the Spark UI homepage?
+Explain the concept of "stages" and "tasks" in the Spark UI. How can this information be used to identify performance bottlenecks in a Spark job?
+What information can be found in the "Storage" tab of the Spark UI? How does this help in understanding memory usage of RDDs and DataFrames in an application?
+Describe how the "Environment" tab in the Spark UI can be useful for debugging. What configuration details are available here, and why are they important for optimizing a Spark job?
+Explain the purpose of the "SQL" tab in the Spark UI. How does it assist in understanding the execution of Spark SQL queries, and what insights can you gather from examining query execution plans?
+
+Working with Spark SQL
+Describe how SQL queries can be used to interact with DataFrames in Spark. Provide an example of creating a temporary view from a DataFrame and executing SQL queries on it.
+Explain how Spark SQL handles schema inference and data type conversions. Describe the process of loading data from a JSON or CSV file and how Spark SQL infers the schema of the DataFrame.
+
+
+UNIT-II
+Performance Tuning
+Explain performance tuning in Spark. What are some key strategies for optimizing Spark job performance, such as partitioning, caching, and minimizing shuffling?
+
+Spark Streaming
+What is Spark Streaming, and how does it work? Describe the basic concepts behind Spark Streaming and how it processes real-time data in micro-batches.
+What is a DStream in Spark Streaming? Explain its role in real-time data processing and how it is different from an RDD.
+Explain the components of Spark Streaming. How do receivers, DStreams, and transformations interact in Spark Streaming to process streaming data?
+
+Caching and Persistence
+Write a note on cache and persistence in Spark. What are the differences between cache() and persist(), and how do they help optimize performance?
+
+Spark MLlib
+What is Spark MLlib, and how is it initialized? Describe its role in machine learning tasks, and explain how you would use it to train a model in Spark.
+Explain statistical analysis using Apache Spark. How can Spark be used for data exploration, summary statistics, and advanced statistical methods in large-scale datasets?
+
+HDFS and Spark
+Write a note on HDFS (Hadoop Distributed File System). What is its role in big data processing, and how does it integrate with Spark for data storage and retrieval?
+
+Spark Execution Modes
+Compare the execution modes available for Spark applications and the Spark shell (e.g., local, cluster mode). Explain when each mode is preferable and how it impacts execution.
+What are the key differences between running a Spark application and using the Spark shell? Discuss their respective use cases and benefits.
+
+SparkContext and SparkSession
+Explain how to create a SparkContext in a standalone application. What configuration settings are typically required, and how do they affect the Spark job?
+Describe the relationship between SparkContext and SparkSession in modern versions of Spark. How has the introduction of SparkSession changed the way we initialize Spark?
+
+Spark vs. Hadoop
+What are the main architectural differences between Apache Spark and Hadoop MapReduce? Discuss how each framework handles data processing and fault tolerance.
+Explain the role of HDFS in Hadoop and how Spark interacts with HDFS when used together. Why might Spark users still choose to leverage HDFS as a storage layer?
